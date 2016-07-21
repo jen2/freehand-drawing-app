@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DrawingAreaView.h
 //  FreehandDrawingTool
 //
 //  Created by Jennifer A Sipila on 7/19/16.
@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DrawingControlViewController.h"
+#import "AppDelegate.h"
 
-@interface ViewController : UIViewController
 
+@interface DrawingAreaView : UIView <DrawViewDelegate>
 
 @end
-
