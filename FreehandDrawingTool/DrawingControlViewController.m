@@ -14,7 +14,6 @@
 @property (weak, nonatomic) IBOutlet UISlider *slider;
 @property (weak, nonatomic) IBOutlet DrawingAreaView *lineView;
 
-
 @end
 
 @implementation DrawingControlViewController
