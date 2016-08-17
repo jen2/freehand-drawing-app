@@ -51,7 +51,6 @@
         self.fetchedImage = [UIImage imageWithData:item];
         [self.images addObject: self.fetchedImage];
     }
-    
     //create sort descriptor THEN make the .sortDescriptors property of this fetchAllMessages equal to it.
     // fetchAllMessages.sortDescriptors = @[ // put sort descriptor in here ];
 }

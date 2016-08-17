@@ -148,7 +148,6 @@
     DrawingDatastore *dataStore = [DrawingDatastore sharedDatastore];
     DrawingData *newDrawing = [NSEntityDescription insertNewObjectForEntityForName:@"BezierData" inManagedObjectContext:dataStore.managedObjectContext];
     newDrawing.drawingImage =  imageData;
-    
     //    DrawingDatastore *dataStore = [DrawingDatastore sharedDatastore];
     //    BezierData *newDrawing = [NSEntityDescription insertNewObjectForEntityForName:@"BezierData" inManagedObjectContext:dataStore.managedObjectContext];
     //    //Convert UIImage to NSData
@@ -160,7 +159,6 @@
     //
     //    // TODO: newDrawing.drawingTitle : collect a title for the users drawing, use an alert view controller or modal to add this text
     //
-    
     [dataStore saveContext];
 }
 

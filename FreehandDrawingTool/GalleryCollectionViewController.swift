@@ -7,12 +7,10 @@
 //
 
 import Foundation
-
 import UIKit
 
 private let reuseIdentifier = "Cell"
 var fetchedImages = []
-
 
 // MARK: UICollectionViewController
 
@@ -40,7 +38,6 @@ class GalleryCollectionViewController: UICollectionViewController
     {
         let datastore = DrawingDatastore.sharedDatastore()
         datastore.fetchData()
-        
         fetchedImages = datastore.images
     }
     
@@ -48,19 +45,16 @@ class GalleryCollectionViewController: UICollectionViewController
     
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int
     {
-        
         return 1
     }
     
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
     {
-        
         return fetchedImages.count
     }
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell
     {
-        
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cellID", forIndexPath: indexPath) as! GalleryCollectionViewCell
         //        cell.backgroundColor = UIColor.redColor()
         let drawnImage = fetchedImages[indexPath.row]
@@ -117,7 +111,6 @@ class GalleryCollectionViewController: UICollectionViewController
      
      }
      */
-    
     
     /*
      // MARK: - Navigation

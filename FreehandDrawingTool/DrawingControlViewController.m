@@ -18,7 +18,8 @@
 
 @implementation DrawingControlViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     self.delegate = self.lineView;
     self.slider.minimumValue = 3.0;
